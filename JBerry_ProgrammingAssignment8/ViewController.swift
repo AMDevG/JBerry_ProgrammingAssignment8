@@ -14,7 +14,8 @@ class ViewController: UITableViewController {
     
  
     
-    let categories = ["Hancock Tower", "Willis Tower", "Humboldt Park", "Lincoln Park"]
+    let categories = ["Hancock Tower", "Willis Tower", "Humboldt Park", "Lincoln Park", "Navy Pier", "Millenium Park", "Shedd Aquarium", "Field Museum", "Institute of Art", "Magnificent Mile",
+        "Museum of Science & Industry", "Adler Planetarium", "Wrigley Field"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class ViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return categories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,6 +64,33 @@ class ViewController: UITableViewController {
             }
             else if selectedCategory == "Lincoln Park"{
                 DestViewController.detailInfo = DicData.LPInfo["summary"]!
+            }
+            else if selectedCategory == "Navy Pier"{
+                DestViewController.detailInfo = DicData.NavyPier["summary"]!
+            }
+            else if selectedCategory == "Millenium Park"{
+                DestViewController.detailInfo = DicData.Millenium["summary"]!
+            }
+            else if selectedCategory == "Shedd Aquarium"{
+                DestViewController.detailInfo = DicData.Shedd["summary"]!
+            }
+            else if selectedCategory == "Field Museum"{
+                DestViewController.detailInfo = DicData.FieldMuseum["summary"]!
+            }
+            else if selectedCategory == "Institute of Art"{
+                DestViewController.detailInfo = DicData.ArtInstitute["summary"]!
+            }
+            else if selectedCategory == "Magnificent Mile"{
+                DestViewController.detailInfo = DicData.MagMile["summary"]!
+            }
+            else if selectedCategory == "Museum of Science & Industry"{
+                DestViewController.detailInfo = DicData.SciIndMuseum["summary"]!
+            }
+            else if selectedCategory == "Adler Planetarium"{
+                DestViewController.detailInfo = DicData.Adler["summary"]!
+            }
+            else if selectedCategory == "Wrigley Field"{
+                DestViewController.detailInfo = DicData.Wrigley["summary"]!
             }
     }
 

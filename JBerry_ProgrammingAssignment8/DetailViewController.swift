@@ -21,6 +21,46 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         landmarkTitle.text = selectedTitle
         detailText.text = detailInfo
+        
+        if selectedTitle == "Hancock Tower"{
+            landmarkImage.image = UIImage(named: "hancock")
+        }
+       else if selectedTitle == "Willis Tower"{
+            landmarkImage.image = UIImage(named: "willis")
+        }
+        else if selectedTitle == "Humboldt Park"{
+            landmarkImage.image = UIImage(named: "humboldt")
+        }
+        else if selectedTitle == "Lincoln Park"{
+            landmarkImage.image = UIImage(named: "lincolnPark")
+        }
+        else if selectedTitle == "Navy Pier"{
+            landmarkImage.image = UIImage(named: "navyPier")
+        }
+        else if selectedTitle == "Millenium Park"{
+            landmarkImage.image = UIImage(named: "millenium")
+        }
+        else if selectedTitle == "Shedd Aquarium"{
+            landmarkImage.image = UIImage(named: "shedd")
+        }
+        else if selectedTitle == "Field Museum"{
+            landmarkImage.image = UIImage(named: "field")
+        }
+        else if selectedTitle == "Institute of Art"{
+            landmarkImage.image = UIImage(named: "art")
+        }
+        else if selectedTitle == "Magnificent Mile"{
+            landmarkImage.image = UIImage(named: "magmile")
+        }
+        else if selectedTitle == "Museum of Science & Industry"{
+            landmarkImage.image = UIImage(named: "science")
+        }
+        else if selectedTitle == "Adler Planetarium"{
+            landmarkImage.image = UIImage(named: "adler")
+        }
+        else if selectedTitle == "Wrigley Field"{
+            landmarkImage.image = UIImage(named: "wrigley")
+        }
 
         // Do any additional setup after loading the view.
     }

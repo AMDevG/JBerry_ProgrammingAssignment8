@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -62,26 +63,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtO-yD-fpj">
-                                <rect key="frame" x="35" y="89" width="304" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-l6-QQh">
-                                <rect key="frame" x="67" y="89" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-l6-QQh">
+                                <rect key="frame" x="16" y="155" width="343" height="167"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a87-K8-wMW">
-                                <rect key="frame" x="67" y="269" width="240" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a87-K8-wMW">
+                                <rect key="frame" x="35" y="391" width="304" height="256"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtO-yD-fpj">
+                                <rect key="frame" x="35" y="81" width="304" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dtO-yD-fpj" firstAttribute="top" secondItem="W9h-wc-YXb" secondAttribute="bottom" constant="17" id="4Dd-gH-TbA"/>
+                            <constraint firstItem="dtO-yD-fpj" firstAttribute="centerX" secondItem="prt-wK-F2w" secondAttribute="centerX" id="6im-0V-dj3"/>
+                            <constraint firstItem="a87-K8-wMW" firstAttribute="centerX" secondItem="prt-wK-F2w" secondAttribute="centerX" id="9wT-lp-uMi"/>
+                            <constraint firstItem="a87-K8-wMW" firstAttribute="top" secondItem="W9h-wc-YXb" secondAttribute="bottom" constant="327" id="Aoi-9Q-gA3"/>
+                            <constraint firstItem="lzX-l6-QQh" firstAttribute="trailing" secondItem="prt-wK-F2w" secondAttribute="trailingMargin" id="DhZ-Wd-cT7"/>
+                            <constraint firstItem="GAd-rX-r6x" firstAttribute="top" secondItem="a87-K8-wMW" secondAttribute="bottom" constant="20" id="KpZ-cM-GuD"/>
+                            <constraint firstItem="lzX-l6-QQh" firstAttribute="top" secondItem="dtO-yD-fpj" secondAttribute="bottom" constant="17" id="dNM-0e-Wn6"/>
+                            <constraint firstItem="a87-K8-wMW" firstAttribute="leading" secondItem="prt-wK-F2w" secondAttribute="leadingMargin" constant="19" id="fQT-hy-SIM"/>
+                            <constraint firstItem="lzX-l6-QQh" firstAttribute="leading" secondItem="prt-wK-F2w" secondAttribute="leadingMargin" id="lcU-ab-siR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="detailText" destination="a87-K8-wMW" id="tYz-3k-oQV"/>

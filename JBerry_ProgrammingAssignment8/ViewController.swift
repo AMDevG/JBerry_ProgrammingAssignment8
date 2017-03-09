@@ -48,10 +48,24 @@ class ViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail"{
             let DestViewController: DetailViewController = segue.destination as! DetailViewController
+            let DicData: LandmarkDetails = LandmarkDetails()
             DestViewController.selectedTitle = selectedCategory
-            // Label of detail title
-        }
+            
+            if selectedCategory == "Hancock Tower"{
+        
+                DestViewController.detailInfo = DicData.HancockTower["summary"]!
+            }
+            else if selectedCategory == "Willis Tower"{
+                DestViewController.detailInfo = DicData.WillisTowerInfo["summary"]!
+            }
+            else if selectedCategory == "Humboldt Park"{
+                DestViewController.detailInfo = DicData.HumboldtInfo["summary"]!
+            }
+            else if selectedCategory == "Lincoln Park"{
+                DestViewController.detailInfo = DicData.LPInfo["summary"]!
+            }
     }
 
+}
 }
 

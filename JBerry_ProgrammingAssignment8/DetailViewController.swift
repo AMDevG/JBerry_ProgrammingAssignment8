@@ -11,12 +11,16 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var landmarkTitle: UILabel!
+    @IBOutlet weak var detailText: UITextView!
+    @IBOutlet weak var landmarkImage: UIImageView!
     
     var selectedTitle = String()
+    var detailInfo = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         landmarkTitle.text = selectedTitle
+        detailText.text = detailInfo
 
         // Do any additional setup after loading the view.
     }

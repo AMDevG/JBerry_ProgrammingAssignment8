@@ -15,6 +15,7 @@
 		9E20E98C1E70F2DB00E4219B /* JBerry_ProgrammingAssignment8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20E98B1E70F2DB00E4219B /* JBerry_ProgrammingAssignment8Tests.swift */; };
 		9E20E9971E70F2DB00E4219B /* JBerry_ProgrammingAssignment8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20E9961E70F2DB00E4219B /* JBerry_ProgrammingAssignment8UITests.swift */; };
 		9E20E9A51E70F45B00E4219B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20E9A41E70F45B00E4219B /* DetailViewController.swift */; };
+		9E20E9A71E7106AB00E4219B /* LandmarkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E20E9A61E7106AB00E4219B /* LandmarkDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9E20E9961E70F2DB00E4219B /* JBerry_ProgrammingAssignment8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBerry_ProgrammingAssignment8UITests.swift; sourceTree = "<group>"; };
 		9E20E9981E70F2DB00E4219B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E20E9A41E70F45B00E4219B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9E20E9A61E7106AB00E4219B /* LandmarkDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9E20E9761E70F2DA00E4219B /* AppDelegate.swift */,
 				9E20E9781E70F2DA00E4219B /* ViewController.swift */,
+				9E20E9A61E7106AB00E4219B /* LandmarkDetails.swift */,
 				9E20E9A41E70F45B00E4219B /* DetailViewController.swift */,
 				9E20E97A1E70F2DA00E4219B /* Main.storyboard */,
 				9E20E97D1E70F2DA00E4219B /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E20E9A71E7106AB00E4219B /* LandmarkDetails.swift in Sources */,
 				9E20E9A51E70F45B00E4219B /* DetailViewController.swift in Sources */,
 				9E20E9791E70F2DA00E4219B /* ViewController.swift in Sources */,
 				9E20E9771E70F2DA00E4219B /* AppDelegate.swift in Sources */,
